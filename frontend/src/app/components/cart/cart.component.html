@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="mt-5"></div>
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let datacart of dataCart2;let indexOfelement = index">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+                    <img style="width: 100px;" src="{{datacart.img}}" alt="" width="300">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">{{datacart.title}}</h5>
+                    <p>{{datacart.description}}</p>
+                    <input type="text" value="{{datacart.amount}}">
+                </div>
+                <i class="fa-solid fa-delete-left" (click)="delete(indexOfelement)" style="display: flex; align-items: center; justify-content: center; cursor: pointer;"></i>
+            </div>
+        </li>
+    </ul>
+  
+</div>

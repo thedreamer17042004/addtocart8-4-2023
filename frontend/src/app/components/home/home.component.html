@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="mt-5"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"  *ngFor="let data1 of dataa;let indexOfelement = index">
+            <div class="card text-start">
+                <img class="card-img-top" src="{{data1.img}}" alt="Title">
+                <div class="card-body">
+                <h4 class="card-title">{{data1.title}}</h4>
+                <p class="card-text">{{data1.description}}</p>
+                <a name="" id="" class="btn btn-danger" (click)="clickme(data1)" role="button">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
